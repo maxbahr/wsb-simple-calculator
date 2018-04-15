@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator</h1>
+    </header>
+    <div class="content">
+        <div class="form">
+            <div>
+                <label>Kwota:</label>
+                <input type="text" id="principal" value="200000" />
+            </div>
+            <div>
+                <label>Lat:</label>
+                <input type="text" id="years" value="30" />
+            </div>
+            <div>
+                <label htmlFor="rate">Rata:</label>
+                <input type="text" id="rate" value="5.0" />
+            </div>
+            <div>
+                <label htmlFor="calcBtn"></label>
+                <button id="calcBtn">Oblicz</button>
+            </div>
+        </div>
+        <h2>Miesięczna płatność:
+            <span id="monthlyPayment"></span>
+        </h2>
+        <h2>Oprocentowanie miesięczne:
+            <span id="monthlyRate"></span>
+        </h2>
+        <h2>Harmonogram spłat:</h2>
+
+        <div>
+            <table id="amortization"></table>
+        </div>
+
+    </div>
+    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="build/main.bundle.js"></script> -->
+</body>
+
+</html>
